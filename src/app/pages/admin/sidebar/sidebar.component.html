@@ -1,0 +1,32 @@
+<mat-card>
+  <mat-action-list>
+    <div mat-subheader>Menu</div>
+    <button routerLink = "/admin" mat-list-item>
+      <mat-icon mat-list-icon>home</mat-icon> Home
+    </button>
+    <button mat-list-item routerLink = "/admin/profile">
+      <mat-icon mat-list-icon>account_circle</mat-icon>Profile
+    </button>
+    <button mat-list-item routerLink = "/admin/update-user">
+      <mat-icon mat-list-icon>edit</mat-icon>Edit profile
+    </button>
+    <button mat-list-item routerLink = "/admin/books">
+      <mat-icon mat-list-icon>book</mat-icon>Books
+    </button>
+    <button mat-list-item routerLink = "/admin/add-books">
+      <mat-icon mat-list-icon>add</mat-icon>Add books
+    </button>
+    <button mat-list-item routerLink = "/admin/update-book">
+      <mat-icon mat-list-icon>edit</mat-icon>Edit books
+    </button>
+    <button mat-list-item routerLink = "/admin/delete-book">
+      <mat-icon mat-list-icon>delete</mat-icon>Delete books
+    </button>
+    <button mat-list-item routerLink = "/admin/delete-user">
+      <mat-icon mat-list-icon>block</mat-icon>Invalidate profile
+    </button>
+    <button mat-list-item (click) = "logout()">
+      <mat-icon mat-list-icon>logout</mat-icon>Exit
+    </button>
+  </mat-action-list>
+</mat-card>

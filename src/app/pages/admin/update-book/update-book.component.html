@@ -1,0 +1,114 @@
+<mat-card>
+  <h1>Update book</h1>
+  <mat-card-content>
+    <div class="bootstrap-wrapper">
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <form (ngSubmit)= "formSubmit()">
+            <mat-form-field class="w100" appearance="outline">
+              <mat-label>Id</mat-label>
+              <input
+              required
+              autofocus
+              type="text"
+              name="id"
+              matInput
+              placeholder="Insert book image"
+              [(ngModel)] = "book.id"
+              >
+            </mat-form-field>
+            <mat-form-field class="w100" appearance="outline">
+              <mat-label>Image</mat-label>
+              <input
+              required
+              autofocus
+              type="text"
+              name="image"
+              matInput
+              placeholder="Insert book image"
+              [(ngModel)] = "book.image"
+              >
+            </mat-form-field>
+            <mat-form-field class="w100" appearance="outline">
+              <mat-label>Title</mat-label>
+              <input
+              required
+              autofocus
+              type="text"
+              name="name"
+              matInput
+              placeholder="Insert book name"
+              [(ngModel)] = "book.name"
+              >
+            </mat-form-field>
+            <mat-form-field class="w100" appearance="outline">
+              <mat-label>Author</mat-label>
+              <input
+              required
+              autofocus
+              type="text"
+              name="author"
+              matInput
+              placeholder="Insert book author"
+              [(ngModel)] = "book.author"
+              >
+            </mat-form-field>
+            <mat-form-field class="w100" appearance="outline">
+              <mat-label>Publisher</mat-label>
+              <input
+              required
+              autofocus
+              type="text"
+              name="publisher"
+              matInput
+              placeholder="Insert book publisher"
+              [(ngModel)] = "book.publisher"
+              >
+            </mat-form-field>
+            <mat-form-field class="w100" appearance="outline">
+              <mat-label>date</mat-label>
+              <input
+              required
+              autofocus
+              type="date"
+              name="date"
+              matInput
+              placeholder="Insert book date"
+              [(ngModel)] = "book.date"
+              >
+            </mat-form-field>
+            <mat-form-field class="w100" appearance="outline">
+              <mat-label>Quantity</mat-label>
+              <input
+              required
+              autofocus
+              type="text"
+              name="quantity"
+              matInput
+              placeholder="Insert book quantity"
+              [(ngModel)] = "book.quantity"
+              >
+            </mat-form-field>
+            <mat-form-field class="w100" appearance="outline">
+              <mat-label>Resume</mat-label>
+              <input
+              required
+              autofocus
+              type="text"
+              name="resume"
+              matInput
+              placeholder="Insert book resume"
+              [(ngModel)] = "book.resume"
+              >
+            </mat-form-field>
+
+            <div class="container text-center mt15">
+              <button mat-raised-button color="primary">Update</button>
+              <button type="reset" style = "margin-left: 20px;" mat-raised-button color="accent">Clean</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>
